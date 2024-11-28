@@ -33,9 +33,10 @@ This repository serves as a resource for understanding the interplay between app
 
 This document provides an overview of various lab notebooks, highlighting their objectives, methods, key findings, and conclusions. These notebooks cover fundamental and advanced computational topics, including optimization, machine learning, and numerical methods.
 
----
+# Introduction to Python
 
-## Lab Notebook: Getting Started with Python
+---
+## [Getting Started with Python](https://github.com/AnthonySlawski/ACM41020/blob/main/GettingStartedWithPython.ipynb)
 
 **Objective**  
 Introduce Python programming basics, emphasizing essential concepts for computational tasks and machine learning applications.
@@ -55,9 +56,11 @@ Introduce Python programming basics, emphasizing essential concepts for computat
 **Conclusion**  
 This notebook sets the stage for advanced programming and data analysis tasks.
 
+# Linear Algebra
+
 ---
 
-## Lab Notebook: Gaussian Elimination and LU Decomposition
+## [Gaussian Elimination and LU Decomposition](https://github.com/AnthonySlawski/ACM41020/blob/main/LUdecomposition-Solution.ipynb)
 
 **Objective**  
 Explore Gaussian elimination and LU decomposition to solve linear systems efficiently and improve numerical stability.
@@ -78,7 +81,7 @@ Gaussian elimination and LU decomposition are essential tools in numerical mathe
 
 ---
 
-## Lab Notebook: QR Factorization
+## [QR Factorization](https://github.com/AnthonySlawski/ACM41020/blob/main/QR-Solution.ipynb)
 
 **Objective**  
 Analyze methods for QR factorization, including Gram-Schmidt, Householder reflections, and Givens rotations.
@@ -98,7 +101,7 @@ QR factorization is versatile, with applications ranging from linear systems to 
 
 ---
 
-## Lab Notebook: Singular Value Decomposition (SVD) and Low-Rank Approximations
+## [Singular Value Decomposition (SVD) and Low-Rank Approximations](https://github.com/AnthonySlawski/ACM41020/blob/main/SVD_LowRankApproximations%20-%20Solution.ipynb)
 
 **Objective**  
 Investigate SVD for decomposing matrices and its applications in low-rank approximations and image compression.
@@ -116,9 +119,11 @@ Investigate SVD for decomposing matrices and its applications in low-rank approx
 **Conclusion**  
 SVD is a powerful tool for dimensionality reduction and data compression.
 
+# Understanding Data
+
 ---
 
-## Lab Notebook: Regression
+## [Regression](https://github.com/AnthonySlawski/ACM41020/blob/main/LinearRegression.ipynb)
 
 **Objective**  
 Explore regression techniques, including linear regression, logistic regression, and their applications.
@@ -138,7 +143,7 @@ Regression techniques are versatile tools for data modeling and classification.
 
 ---
 
-## Lab Notebook: Principal Component Analysis (PCA)
+## [Principal Component Analysis (PCA)](https://github.com/AnthonySlawski/ACM41020/blob/main/PrincipalComponentAnalysis.ipynb)
 
 **Objective**  
 Demonstrate PCA for dimensionality reduction and classification tasks.
@@ -155,9 +160,11 @@ Demonstrate PCA for dimensionality reduction and classification tasks.
 **Conclusion**  
 PCA is essential for feature extraction, visualization, and classification in high-dimensional datasets.
 
+# Support Vector Machines
+
 ---
 
-## Lab Notebook: Support Vector Machines (SVMs)
+## [Support Vector Machines (SVMs)](https://github.com/AnthonySlawski/ACM41020/blob/main/Support%20Vector%20Machines%20-%20Solution.ipynb)
 
 **Objective**  
 Explore SVMs for classification tasks using primal and dual optimization methods and the kernel trick.
@@ -174,9 +181,11 @@ Explore SVMs for classification tasks using primal and dual optimization methods
 **Conclusion**  
 SVMs are robust tools for classification tasks, particularly for high-dimensional and complex datasets.
 
+# Neural Networks
+
 ---
 
-## Neural Networks
+## [Neural Networks](https://github.com/AnthonySlawski/ACM41020/blob/main/Simple%20Neural%20Network%20-%20Solution.ipynb)
 
 **Objective**  
 Introduce neural networks for image recognition and classification tasks.
@@ -195,7 +204,71 @@ Neural networks are foundational tools for modern machine learning tasks.
 
 ---
 
-## Neural Networks with TensorFlow
+## [Training a Neural Network with Stochastic Gradient Descent](https://github.com/AnthonySlawski/ACM41020/blob/main/Training%20a%20Neural%20Network%20-%20solution.ipynb)
+
+**Objective**  
+Implement a stochastic gradient descent (SGD) learning algorithm to train feedforward neural networks, with applications in binary classification and handwritten digit recognition.
+
+**Methods Used**  
+- **Custom Neural Network Implementation**: Developed a `Network` class to manage layers, weights, biases, and training processes.
+- **Activation Function**: Utilized the sigmoid function and its derivative for forward propagation and gradient calculations.
+- **Stochastic Gradient Descent**: Implemented mini-batch SGD with backpropagation for parameter updates.
+- **Visualization**: Plotted decision boundaries for binary classification and visualized network predictions for handwritten digit recognition.
+
+**Key Findings**  
+- **Binary Classification**:  
+  - Trained a network with two hidden layers (3 neurons each) to classify points as blue or red.  
+  - Achieved a clear decision boundary after 10,000 iterations with a learning rate of 0.05.  
+- **Handwritten Digit Recognition**:  
+  - Constructed a network with one hidden layer (30 neurons) and trained it on the MNIST dataset.  
+  - Achieved over 94% accuracy on the test set after 10 epochs.  
+- **Training Insights**:  
+  - Showcased the role of iterative updates, weight initialization, and learning rate adjustments in optimizing performance.  
+  - Highlighted the network's ability to generalize to unseen data.
+
+**Conclusion**  
+This notebook demonstrates the effectiveness of stochastic gradient descent in training neural networks for diverse tasks. By applying SGD and backpropagation, the network successfully classified simple binary data and recognized handwritten digits. These results underline the importance of network architecture, parameter tuning, and visualization in achieving optimal performance.
+
+---
+
+## [Improvements to a Neural Network](https://github.com/AnthonySlawski/ACM41020/blob/main/Improved%20Neural%20Network%20-%20Solution.ipynb)
+
+**Objective**  
+Enhance a simple feedforward neural network to improve accuracy and training efficiency through cost function selection, regularization, weight initialization, and early stopping.
+
+**Methods Used**  
+- **Cost Functions**:
+  - **Quadratic Cost**: Measures squared differences between predictions and actual outputs.
+  - **Cross-Entropy Cost**: Optimized for classification tasks, improving numerical stability and convergence.
+- **Weight Initialization**:
+  - **Large Weight Initialization**: Weights initialized with a standard Gaussian distribution.
+  - **Default Weight Initialization**: Weights scaled by \(1/\sqrt{n}\) to reduce gradient vanishing/exploding issues.
+- **Regularization**:
+  - \(L2\) regularization added to the cost function to mitigate overfitting.
+- **Early Stopping**:
+  - Training halted when evaluation accuracy ceases to improve for a defined number of epochs.
+- **Monitoring**:
+  - Evaluation of cost and accuracy on both training and validation datasets.
+
+**Key Findings**  
+- **Accuracy Improvements**:
+  - Switching from quadratic to cross-entropy cost significantly boosted accuracy, particularly for larger networks.
+  - Early stopping improved generalization by preventing overtraining.
+- **Impact of Regularization**:
+  - Regularization effectively reduced overfitting, particularly when training on smaller datasets.
+- **Weight Initialization**:
+  - Default weight initialization improved convergence rates compared to unscaled weights.
+- **Performance Metrics**:
+  - A 30-neuron hidden layer achieved ~94.6% accuracy on the MNIST test dataset with cross-entropy cost.
+  - A 100-neuron hidden layer increased accuracy to ~96.6% under the same conditions.
+
+**Conclusion**  
+This notebook demonstrates the impact of incorporating advanced features into a neural network. Cost function selection, regularization, and weight initialization significantly enhance performance, while early stopping ensures robust generalization. These improvements establish a strong foundation for applying neural networks to complex classification tasks like handwritten digit recognition.
+
+
+---
+
+## [Neural Networks with TensorFlow](https://github.com/AnthonySlawski/ACM41020/blob/main/TensorFlow.ipynb)
 
 **Objective**  
 Implement and train neural networks using TensorFlow/Keras for handwritten digit classification.
@@ -214,7 +287,7 @@ TensorFlow/Keras enables efficient neural network implementation for practical a
 
 ---
 
-## Convolutional Neural Networks (CNNs)
+## [Convolutional Neural Networks (CNNs)](https://github.com/AnthonySlawski/ACM41020/blob/main/Convolutional%20Neural%20Networks.ipynb)
 
 **Objective**  
 Build a CNN for handwritten digit recognition using TensorFlow/Keras.
@@ -231,7 +304,7 @@ CNNs are highly effective for tasks requiring spatial feature extraction.
 
 ---
 
-## Transformers
+## [Transformers](https://github.com/AnthonySlawski/ACM41020/blob/main/Transformers.ipynb)
 
 **Objective**  
 Explore transformer architectures and their applications in natural language processing (NLP).
@@ -249,7 +322,7 @@ Transformers are revolutionary in NLP, powering state-of-the-art AI systems.
 
 ---
 
-## Regression and Gradient Descent
+## [Regression and Gradient Descent](https://github.com/AnthonySlawski/ACM41020/blob/main/Regression%20and%20Gradient%20Descent%20-%20Solution.ipynb)
 
 **Objective**  
 Explore regression techniques and gradient descent for optimization.
@@ -267,7 +340,7 @@ Regression and gradient descent are foundational for predictive modeling and opt
 
 ---
 
-## Unconstrained Optimization
+## [Unconstrained Optimization](https://github.com/AnthonySlawski/ACM41020/blob/main/Optimisation.ipynb)
 
 **Objective**  
 Solve optimization problems using gradient descent, momentum-based methods, and stochastic gradient descent (SGD).
@@ -283,3 +356,170 @@ Solve optimization problems using gradient descent, momentum-based methods, and 
 
 **Conclusion**  
 Unconstrained optimization techniques are versatile tools for solving mathematical and real-world problems.
+
+# Assignments
+
+## [Assignment 1](https://github.com/AnthonySlawski/ACM41020/blob/main/Assignment%201.ipynb)
+
+**Objective**  
+Explore matrix decomposition methods, including LU, QR, and SVD, as well as visualization of orthogonal and singular vectors.
+
+**Methods Used**  
+- **LU Decomposition**:
+  - Implemented Gaussian elimination to decompose matrices into upper-triangular (\(U\)) and lower-triangular (\(L\)) forms.
+  - Verified results using elementary matrices and `scipy.linalg.lu`.
+- **QR Decomposition**:
+  - Computed orthogonal (\(Q\)) and upper-triangular (\(R\)) matrices using:
+    - Gram-Schmidt orthogonalization.
+    - Householder reflections.
+    - NumPy's built-in QR method.
+- **Singular Value Decomposition (SVD)**:
+  - Derived SVD components (\(U\), \(\Sigma\), \(V^T\)) using eigenvalue decomposition.
+  - Verified with NumPy's `np.linalg.svd`.
+- **Visualization**:
+  - Used 3D plots to visualize:
+    - Columns of \(A\) and their transformed orthogonal bases in \(Q\) and \(U\).
+    - Singular vectors from SVD.
+
+**Key Findings**  
+- LU decomposition successfully factorized \(A\), and results matched across manual and library-based methods.
+- QR decomposition via Householder reflections demonstrated numerical stability, while Gram-Schmidt was intuitive but prone to instability.
+- SVD highlighted the structural properties of \(A\), with singular vectors aligning along directions of maximum variance.
+- Visualizations revealed geometric interpretations of matrix decompositions and the orthogonality of vector bases.
+
+**Conclusion**  
+This assignment reinforced fundamental concepts in linear algebra and matrix decomposition. Methods like LU, QR, and SVD were applied successfully, offering insights into numerical stability, orthogonality, and eigenvalue-based decompositions. Visualization enhanced understanding of transformations in vector spaces.
+
+---
+
+## [Assignment 2](https://github.com/AnthonySlawski/ACM41020/blob/main/Assignment%202.ipynb)
+
+**Objective**  
+Investigate regression techniques, Principal Component Analysis (PCA), and Support Vector Machines (SVMs) to model data and classify points.
+
+**Methods Used**  
+- **Regression**:
+  - Linear regression with and without intercept using the normal equations to minimize squared errors.
+  - Quadratic regression for fitting a parabola to data.
+  - Visualization of regression models with error annotations.
+- **PCA**:
+  - Centered data and computed covariance matrix to extract principal components.
+  - Projected data onto the first principal component and visualized the fit.
+  - Compared orthogonal and vertical distances for PCA and regression.
+- **SVMs**:
+  - Linear SVM classification using dual variables and constraints.
+  - Support vector identification and calculation of weights (\(\lambda\)).
+  - Mapped 1D data into 2D using trigonometric transformations to classify non-linearly separable data.
+- **Visualization**:
+  - 2D and 3D visualizations of regression models, PCA fits, and SVM decision boundaries.
+
+**Key Findings**  
+- **Regression**:
+  - Linear regression without intercept resulted in slightly higher mean squared error than the model with intercept.
+  - Quadratic regression minimized squared errors effectively, fitting a parabola to the data points.
+- **PCA**:
+  - PCA minimized orthogonal distances better than regression, aligning with its goal to maximize variance.
+  - Vertical distances were smaller in regression, highlighting the differences in objectives.
+- **SVMs**:
+  - Identified support vectors and weights for linear classification.
+  - Kernel methods successfully separated non-linear data by mapping into higher dimensions.
+  - SVM classification models achieved effective separation with clear decision boundaries and margins.
+- **Visualization**:
+  - Regression and PCA visualizations clarified the geometric interpretations of the fits.
+  - SVM plots highlighted decision boundaries, margins, and support vectors for multiple datasets.
+
+**Conclusion**  
+This assignment demonstrated regression techniques, PCA, and SVMs as powerful tools for data modeling and classification. PCA excelled in minimizing orthogonal distances, while regression minimized vertical distances. SVMs provided robust classification for both linear and non-linear separable datasets, with kernel methods enabling transformations for complex cases. The visualizations significantly enhanced understanding of the methodologies and their outcomes.
+
+---
+
+## [Assignment 3](https://github.com/AnthonySlawski/ACM41020/blob/main/Assignment%203.ipynb)
+
+**Objective**  
+Investigate optimization techniques, specifically gradient descent and gradient descent with momentum, to minimize quadratic functions. Analyze convergence behaviors and compare error reduction rates for both methods.
+
+**Methods Used**  
+- **Gradient Descent**:
+  - Iterative updates using the gradient of a quadratic function.
+  - Step size (\(\alpha\)) determined by the largest eigenvalue of the Hessian matrix.
+  - Visualized contours of the quadratic function with optimization steps.
+  - Calculated errors and convergence rates.
+- **Gradient Descent with Momentum**:
+  - Added a momentum term to accelerate convergence.
+  - Optimized step size and momentum factor based on eigenvalue properties.
+  - Compared convergence rates and error reduction against standard gradient descent.
+- **Visualization**:
+  - Contour plots of quadratic functions showing optimization paths.
+  - Comparison of worst-case direction with optimization steps.
+- **Error Analysis**:
+  - Computed error norms at each step for both methods.
+  - Analyzed error ratios to determine convergence rates.
+
+**Key Findings**  
+- **Gradient Descent**:
+  - Converges linearly with a consistent error ratio of ~0.75.
+  - Slower convergence, particularly in directions corresponding to smaller eigenvalues.
+  - Demonstrates predictable reduction in error proportional to step size.
+- **Gradient Descent with Momentum**:
+  - Accelerates convergence with error ratios decreasing over iterations (~0.57, 0.47, 0.43 in initial steps).
+  - Outperforms standard gradient descent by leveraging momentum to "remember" prior steps.
+  - More efficient error reduction in poorly conditioned directions.
+- **Visualization and Analysis**:
+  - Contour plots highlight faster optimization steps with momentum.
+  - Momentum-based descent achieves tighter convergence around the minimum within fewer iterations.
+
+**Conclusion**  
+Gradient descent and its momentum-enhanced variant are effective for optimizing quadratic functions. While standard gradient descent exhibits predictable but slower convergence, the inclusion of momentum significantly improves performance, particularly for ill-conditioned problems. This assignment underscores the importance of acceleration techniques in iterative optimization methods.
+
+---
+
+## [Assignment 4](https://github.com/AnthonySlawski/ACM41020/blob/main/ML%20Assignment%204.ipynb)
+
+**Objective**  
+Develop and analyze an autoencoder architecture and neural network models to explore representation learning and function approximation using the MNIST dataset and periodic functions.
+
+**Methods Used**  
+1. **Autoencoder Implementation**:
+   - Constructed an encoder-decoder architecture using a custom neural network class.
+   - Encoder compresses MNIST images into latent vectors.
+   - Decoder reconstructs images from latent vectors.
+   - Trained autoencoder with MNIST training data to minimize reconstruction loss.
+
+2. **Latent Space Visualization**:
+   - Encoded images into 10-dimensional latent vectors.
+   - Analyzed reconstructed images to interpret decoder weights as feature representations.
+
+3. **Reconstruction Performance**:
+   - Tested reconstruction on both perfect vectors (one-hot representations) and real MNIST test images.
+   - Compared reconstructed images with original images to assess the autoencoder’s effectiveness.
+
+4. **Function Approximation**:
+   - Trained two separate neural network models:
+     - \( f(x) = \sin(x) \) over \( [0, 2\pi] \).
+     - \( g(x) = \frac{1 + \sin(x)}{2} \) over \( [0, 2\pi] \).
+   - Models utilized sigmoid activation functions and were trained with MSE loss.
+   - Compared model outputs with true functions to evaluate performance.
+
+5. **Extrapolation Analysis**:
+   - Evaluated \( g(x) \) model’s extrapolation performance on \( [0, 4\pi] \).
+   - Investigated the limitations of neural networks when extending beyond training data.
+
+**Key Findings**  
+- **Autoencoder**:
+  - Encoder effectively compressed MNIST images into latent vectors.
+  - Decoder successfully reconstructed images with distinct features corresponding to digit strokes.
+  - Performance improved with deeper networks (e.g., 40 hidden neurons in the encoder and decoder).
+
+- **Function Approximation**:
+  - The model approximating \( g(x) = \frac{1 + \sin(x)}{2} \) performed better than \( f(x) = \sin(x) \) due to sigmoid activation compatibility with \( g(x) \)’s range.
+  - For \( f(x) \), the network struggled to approximate negative values due to sigmoid output limitations.
+
+- **Extrapolation**:
+  - Model performance declined significantly outside the training range (\( [0, 2\pi] \)).
+  - Limited training data and the smooth nature of sigmoid activations restricted the model’s ability to capture periodicity.
+
+**Conclusion**  
+This assignment highlights the strengths and limitations of neural networks in representation learning and function approximation:
+- Autoencoders effectively compress and reconstruct data but require deeper architectures for capturing complex patterns.
+- Neural networks excel within training ranges but struggle with extrapolation, especially for periodic functions with limited features or training data.
+- Activation function choice significantly impacts model performance, particularly for functions with varying ranges.
