@@ -440,6 +440,7 @@ This assignment demonstrated regression techniques, PCA, and SVMs as powerful to
 ## [Assignment 3](https://github.com/AnthonySlawski/ACM41020/blob/main/Assignment%203.ipynb)
 [Assignment Sheet 3](https://github.com/AnthonySlawski/ACM41020/blob/main/ACM41020%20Assignment%203.pdf)
 
+[Assignment with Written Answers](https://github.com/AnthonySlawski/ACM41020/blob/main/Ml%20Assignment%203.pdf)
 **Objective**  
 Investigate optimization techniques, specifically gradient descent and gradient descent with momentum, to minimize quadratic functions. Analyze convergence behaviors and compare error reduction rates for both methods.
 
