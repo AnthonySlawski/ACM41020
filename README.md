@@ -362,6 +362,7 @@ Unconstrained optimization techniques are versatile tools for solving mathematic
 # Assignments
 
 ## [Assignment 1](https://github.com/AnthonySlawski/ACM41020/blob/main/Assignment%201.ipynb)
+[Assignment Sheet 1](https://github.com/AnthonySlawski/ACM41020/blob/main/ACM41020%20Assignment%201.pdf)
 
 **Objective**  
 Explore matrix decomposition methods, including LU, QR, and SVD, as well as visualization of orthogonal and singular vectors.
@@ -395,6 +396,7 @@ This assignment reinforced fundamental concepts in linear algebra and matrix dec
 ---
 
 ## [Assignment 2](https://github.com/AnthonySlawski/ACM41020/blob/main/Assignment%202.ipynb)
+[Assignment Sheet 2](https://github.com/AnthonySlawski/ACM41020/blob/main/ACM41020%20Assignment%202.pdf)
 
 **Objective**  
 Investigate regression techniques, Principal Component Analysis (PCA), and Support Vector Machines (SVMs) to model data and classify points.
@@ -436,6 +438,7 @@ This assignment demonstrated regression techniques, PCA, and SVMs as powerful to
 ---
 
 ## [Assignment 3](https://github.com/AnthonySlawski/ACM41020/blob/main/Assignment%203.ipynb)
+[Assignment Sheet 3](https://github.com/AnthonySlawski/ACM41020/blob/main/ACM41020%20Assignment%203.pdf)
 
 **Objective**  
 Investigate optimization techniques, specifically gradient descent and gradient descent with momentum, to minimize quadratic functions. Analyze convergence behaviors and compare error reduction rates for both methods.
@@ -476,6 +479,7 @@ Gradient descent and its momentum-enhanced variant are effective for optimizing 
 ---
 
 ## [Assignment 4](https://github.com/AnthonySlawski/ACM41020/blob/main/ML%20Assignment%204.ipynb)
+[Assignment Sheet 4](https://github.com/AnthonySlawski/ACM41020/blob/main/ACM41020%20Assignment%204.pdf)
 
 **Objective**  
 Develop and analyze an autoencoder architecture and neural network models to explore representation learning and function approximation using the MNIST dataset and periodic functions.
