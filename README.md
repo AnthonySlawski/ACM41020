@@ -531,3 +531,9 @@ This assignment highlights the strengths and limitations of neural networks in r
 - Autoencoders effectively compress and reconstruct data but require deeper architectures for capturing complex patterns.
 - Neural networks excel within training ranges but struggle with extrapolation, especially for periodic functions with limited features or training data.
 - Activation function choice significantly impacts model performance, particularly for functions with varying ranges.
+
+# Exam Work
+
+## [Lab Exam](https://github.com/AnthonySlawski/ACM41020/blob/main/ACM30100-202122-lab.pdf)
+
+## [Neural Network Exam](https://github.com/AnthonySlawski/ACM41020/blob/main/Neural%20Network%20Exam.ipynb)
