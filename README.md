@@ -320,6 +320,8 @@ Explore transformer architectures and their applications in natural language pro
 **Conclusion**  
 Transformers are revolutionary in NLP, powering state-of-the-art AI systems.
 
+# Optimization
+
 ---
 
 ## [Regression and Gradient Descent](https://github.com/AnthonySlawski/ACM41020/blob/main/Regression%20and%20Gradient%20Descent%20-%20Solution.ipynb)
