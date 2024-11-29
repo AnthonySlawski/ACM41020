@@ -537,3 +537,5 @@ This assignment highlights the strengths and limitations of neural networks in r
 ## [Lab Exam](https://github.com/AnthonySlawski/ACM41020/blob/main/ACM30100-202122-lab.pdf)
 
 ## [Neural Network Exam](https://github.com/AnthonySlawski/ACM41020/blob/main/Neural%20Network%20Exam.ipynb)
+
+## [THE GOAT (Jack Sherry ((Jerry Sherry))) Notes](https://github.com/AnthonySlawski/ACM41020/blob/main/Revision%20Notebook.ipynb)
